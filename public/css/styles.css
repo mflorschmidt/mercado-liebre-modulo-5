@@ -1,0 +1,829 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #EAC926;
+    width: 100vw;
+}
+
+header img {
+    width: 200px;
+}
+
+header nav {
+    display: none;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 42%;
+}
+
+header nav ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header p {
+    text-align: center;
+    font-size: 13px;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+.search {
+    background-color: #fff;
+    border: none;
+    color: #666;
+    font-size: 13px;
+    padding: 2px;
+    width: 98%;
+}
+
+.buscador .lupa i {
+    background-color: #fff;
+    border: none;
+    color: #666;
+    font-size: 18px;
+    padding-bottom: 1px;
+}
+
+.cuotas {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .burger-menu i {
+    color: #fff;
+    background-color: #1259c3;
+    font-size: px;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+    border-radius: 5px;
+}
+
+header .burger-menu {
+    text-align: center;
+}
+
+.banner {
+    width: 100vw;
+}
+
+main {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.precio {
+    width: 30%;
+    font-size: 18px;
+}
+
+.descuento {
+    width: 70%;
+    font-size: 16px;
+    color: #39b54a;
+    text-align: right;
+}
+
+.main-header {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5%;
+    width: 100%;
+}
+
+.div-logo {
+    width: 47%;
+}
+
+.logo {
+    width: 90%;
+}
+
+.buscador {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    text-align: center;
+    width: 50%;
+}
+
+main h3 {
+    font-size: 24px;
+    text-align: left;
+}
+
+.info-article {
+    border-top: solid 1px #ebebeb;
+    padding: 15px; 
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+main section article{
+    margin-bottom: 10px;
+    transition: all 0.3s;
+}
+
+main section article img {
+    width: 100%;
+}
+
+main section article div i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    color: #39b54a;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: all 0.3s;
+}
+
+
+.descripción {
+    font-size: 16px;
+    display: none;
+    color:#666666;
+    transition: all 0.3s;
+}
+
+
+#formulario-registro {
+    background-color: #ebebeb;
+}
+
+.formularios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 25px;
+}
+
+form div {
+    margin-bottom: 10px;
+    border-radius: 5%;
+    width: 100%;
+    font-size: 16px;
+}
+
+form h3 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.text-field {
+    padding: 5px;
+}
+
+.selecciones {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.botonForm {
+    width: 42%;
+    border-radius: 5%;
+    padding: 3px;
+}
+
+.botonSubmit {
+    background-color: green;
+    color: #FFF;
+    border: none;
+}
+
+.botonReset {
+    background-color: red;
+    color: #FFF;
+    border: none;
+}
+
+.div-fotoPerfil {
+    text-align: center;
+    font-weight: normal;
+}
+
+main img .fotoDePerfil {
+width: 400px;
+height: 400px;
+}
+
+.div-botones {
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+
+.div-contrasenia {
+    text-align: center;
+    
+}
+
+footer {
+    width: 100vw;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+footer section div i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+
+.footer-padding {
+    margin-bottom: 16px;
+}
+
+.footer-padding p {
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: #666;
+}
+
+.footer-padding h4 {
+    margin-top: 0;
+    color: #666;
+    margin-bottom: 0;
+}
+
+.Copyright {
+    text-align: left;
+    font-size: 12px;
+    color: #666;
+}
+
+.formulario-login {
+    text-align: center;
+    padding: 10px;
+    background-color: #ebebeb;
+    width: 100%;
+}
+
+.usuario-contraseña {
+    border-radius: 10%;
+}
+
+.boton-login-enviar {
+    background-color: #1259c3;
+    color: #FFF;
+    border: none;
+    border-radius: 5%;
+    padding: 5px;
+}
+
+.boton-login-enviar:hover {
+    background-color: #0022AA;
+    transition-duration: 0.3s;
+}
+
+.usuario-login {
+    padding: 5px;
+    border: #FFF;
+}
+    
+
+.contrasenia-login {
+    padding: 5px;
+    border: #FFF;
+}
+
+.header-fijo {
+    background-color: #EAC926;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.main-fijo {
+    margin-top: 180px;
+}
+
+footer section i:hover {
+    color: #0022AA;
+    transition-duration: 0.3s;
+}
+
+.label-register {
+    text-align: left;
+}
+
+@media (min-width: 361px) {
+   
+    .main-header {
+       align-items: center;
+       width: 100%;
+       justify-content: space-around;
+       padding: 30px;
+    }
+
+    .descripción {
+        display: block;
+    }
+
+    main section article {
+        width: 45%;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header .burger-menu {
+        display: none;
+    }
+
+    .search {
+        font-size: 14px;
+        width: 100%;
+        padding: 5px;
+        border: none;
+    }
+
+    header .lupa {
+        font-size: 22px; 
+        padding-top: 2px;
+        padding-right: 10px;
+    }
+
+    .buscador .lupa i {
+        font-size: 25px;
+        padding-bottom: 1px;
+    }
+
+    header p {
+        font-size: 13px;
+        padding-top: 3px;
+    }
+
+    header p i {
+        padding-left: 10px;
+    }
+
+    .cuotas {
+        width: 38%;
+    }
+
+    .logo {
+        width: 70%;
+    }
+
+    .div-logo {
+        width: 30%;
+    }
+
+    .buscador {
+        width: 32%;
+        text-align: center;
+    }
+
+    .Primer-Título-Visita {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .Ofertas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .lista {
+        padding-bottom: 20px;
+        justify-content: space-around;
+    }
+
+    .lista a {
+        font-size: 13px;
+        margin-left: 5px;
+    }
+
+    .lista-formularios {
+        padding-left: 35px;
+    }
+
+    .lista-ofertas {
+        padding-right: 35px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    main section h3 {
+        margin-bottom: 15px;
+    }
+
+    form div {
+        text-align: center;
+        font-family: roboto; 
+        font-size: 18px;
+   }
+
+   form h3 {
+    margin-bottom: 5px;
+   }
+
+    .botonForm {
+        width: 22%;
+    }
+    
+    footer {
+        width: 100%;
+        margin-top: 15px;
+    }
+   
+    .text-field {
+        border: #FFF;
+    }
+
+    .contenedor-input-text {
+        border-radius: 5%;
+    }
+
+    .label-register {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .label-register-nacimiento {
+        font-size: 14px;
+    }
+
+    .main-fijo {
+        margin-top: 142px;
+    }    
+    
+    main {
+        width: 80%;
+    }
+
+    .main-header {
+        padding: 45px;
+        }
+    
+    .lista {
+        justify-content: space-around;
+    }
+    
+    .lista a {
+       
+        font-size: 12px;
+    }
+
+    .lista-formularios {
+        padding-left: 0
+    }
+
+    .lista-ofertas {
+        padding-right: 0;
+    }
+
+    .footer p {
+        font-size: 13px;
+    }
+
+    .footer h4 {
+        font-size: 14px;
+    }
+
+    #formulario-registro h3 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .selecciones {
+        text-align: left;
+    }
+
+}
+
+@media (min-width: 400px) {
+    .lista {
+        padding-bottom: 0;
+}
+
+    .lista-ofertas {
+        width: 63%;
+    }
+
+    .lista-formularios {
+        padding-left: 0;
+        margin-left: 15px;
+        width: 85%;
+    }
+
+    .lista-formularios .href-register {
+        width: 20%;
+    }
+
+    .lista-formularios .href-login {
+        width: 32%;
+    }
+
+    .lista-formularios .href-mis-compras {
+        width: 38%;
+    }
+}
+
+@media (min-width: 561px) {
+    
+    .main-header {
+    padding: 50px;
+    }
+
+    .header-fijo {
+        padding: 10px;
+    }
+    .footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 15px;
+    }
+
+    footer p {
+        font-size: 11px;
+    }
+
+    .footer-padding {
+        margin: 10px;
+        font-size: 18px;
+    }
+
+    .Copyright {
+        margin-bottom: 20px;
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+
+    main {
+        width: 80%;
+    }
+
+    .lista a {
+        font-size: 16px;
+    }
+}
+
+
+@media (min-width: 769px) {
+
+    main {
+        width: 70%;
+    }
+
+    .main-header {
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 15px;
+    }
+
+    header p {
+       font-size: 24px;
+       padding-bottom: 25px;
+       padding-left: 70px;
+       padding-top: 20px;
+    }
+
+    .div-logo {
+        width: 30%;
+    }
+
+    .logo {
+        width: 75%;
+        text-align: center;
+    }
+
+    .buscador {
+        width: 30%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .search {
+        font-size: 21px;
+        width: 90%;
+        padding: 19px;
+    }
+
+    .buscador .lupa i {
+        font-size: 61px;
+        margin-bottom: 1.5px;
+    }
+
+    .cuotas {
+        width: 40%;
+    }
+
+    .lista {
+        justify-content: space-around;
+        padding-bottom: 26px;
+    }
+
+    .lista a {
+        font-size: 17px;
+        margin: 5px;
+    }
+
+    .lista-ofertas {
+        margin-right: 100px;
+        padding-right: 0;
+        width: 55%;
+        padding-left: 0;
+        margin-left: 15px;
+    }
+
+    .lista-formularios {
+        margin-left: 10px;
+        width: 85%;
+    }
+
+    main section article {
+       width: 22.5%;
+    }   
+
+    main section h3 {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+
+    .contenedor-input-text {
+        font-size: 18px;
+    }
+
+    .label-register-nacimiento {
+        font-size: 21px;
+    }
+
+    form h3 {
+        font-size: 23px;
+    }
+
+    .label-register {
+        font-size: 17px;
+    }
+
+    .botonForm {
+        font-size: 17px;
+    }
+    .nacimiento {
+        font-size: 18px;
+    }
+
+    .usuario-login {
+        font-size: 18px;
+    }
+
+    .contrasenia-login {
+        font-size: 18px;
+    }
+
+    .boton-login-enviar {
+        font-size: 18px;
+    }
+
+    .header-fijo {
+       width: 100%;
+       padding-bottom: 0px;
+    }
+
+    .main-fijo {
+        margin-top: 240px;
+    }
+
+    .text-field {
+        font-size: 18px;
+    }
+    
+    .descripción {
+        display: none;
+    }
+
+    article:hover .descripción { 
+        display: block;
+    }
+
+    article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    article:hover i {
+        transform: rotate(-90deg);
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+    }
+    
+    }
+
+    @media (min-width: 800px) {
+
+        .lista-ofertas {
+            padding-right: 0;
+            width: 75%;
+    }
+    
+        .lista-formularios {
+            padding-left: 0;
+            margin-left: 5px;
+            width: 100%;
+    }
+
+        .header-fijo {
+            padding-bottom: 0px;
+    }
+
+        .main-header {
+            padding: 35px;
+    }
+    }
+
+    @media (min-width: 1000px) {
+
+        .lista a {
+            font-size: 20px;
+    }
+    
+        .lista-ofertas {
+            padding-right: 0;
+            width: 80%;
+    }
+    
+        .lista-formularios {
+            padding-left: 0;
+            margin-left: 15px;
+            width: 85%;
+    }
+
+        .label-register {
+            font-size: 14px;
+    }
+
+        .label-register-nacimiento {
+            font-size: 19px;
+    }
+
+        .main-header {
+            padding: 60px;
+    }
+
+    }
+
+    @media (min-width: 1500px) {
+
+        .lista a {
+            font-size: 22px;
+        }
+
+    }
+
+    @media (min-width: 1700px) {
+
+        .lista a {
+            font-size: 24px;
+        }
+    
+    }

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include('partials/head')%>
+    <body>
+        <%-include('partials/header')%> 
+    <div class="main-fijo">
+        <section>
+            <img class="banner" src="/img/img-home-banner.jpg" alt="logo-mercado-liebre">
+        </section>
+
+        <main id="formulario-registro">
+            <form class= "formularios" action="/user/register" method="post">
+
+                <div class="contenedor-input-text">
+                    <input class="text-field" type="text" name="name" placeholder="Nombre y Apellido">
+                </div>
+
+                <div class="contenedor-input-text">    
+                    <input class="text-field" type="text" name="username" placeholder="Nombre de Usuario" value="<% if locals.oldData ? oldData.username : null %>">
+                    <% if(locals.errors && errors.username) { %>
+                    <p><%= errors.username.msg %></p>
+                    <% } %>
+
+                </div>
+
+                <div>
+                    <label class="label-register-nacimiento" for="nacimiento">Fecha de Nacimiento</label>  
+                    <input class="nacimiento" type="date" name="nacimiento" id="nacimiento">
+                </div>
+
+                <div class="contenedor-input-text">
+                    <input class="text-field" type="email" name="email" placeholder="ejemplo@gmail.com">
+                </div>
+
+                <div class="contenedor-input-text">    
+                    <input class="text-field" type="text" name="domicilio" placeholder="Calle Falsa 123"> 
+                </div>
+                <h3>Tipo de Perfil</h3>
+                <div class="selecciones">   
+                    <div>
+                        <input type="radio" name="perfil" value="Comprador" id="comprador"> 
+                        <label class="label-register" for="comprador">Comprador</label> 
+                    </div>
+                    <div>
+                        <input type="radio" name="perfil" value="Vendedor" id="vendedor">
+                        <label class="label-register" for="vendedor">Vendedor</label>
+                    </div> 
+                </div>    
+                <h3>Intereses</h3>
+                <div class="selecciones"> 
+                    <label class="label-register" for="electro">Electro</label>
+                    <input type="checkbox" name="intereses" value="electro" id="electro">
+                    <label class="label-register" for="moda">Moda</label>
+                    <input type="checkbox" name="intereses" value="moda" id="moda">
+                    <label class="label-register" for="hogar">Hogar</label>
+                    <input type="checkbox" name="intereses" value="hogar" id="hogar">
+                    <label class="label-register" for="juguetería">Juguetería</label>
+                    <input type="checkbox" name="intereses" value="juguetería" id="juguetería">
+                    <label class="label-register" for="vidaSana">Vida Sana</Var></label>
+                    <input type="checkbox" name="intereses" value="vidaSana" id="vidaSana"> 
+                </div>
+
+                <div class="div-fotoPerfil">
+                    <label class="label-register" for="image">Foto de Perfil</Var></label>
+                    <input type="file" name="image" id="image">
+                </div>
+
+                <div class="div-contrasenia">
+                    <input class="text-field" type="password" name="contrasenia" placeholder="Contraseña">
+                    <% if(locals.errors && errors.contrasenia) { %>
+                        <p><%= errors.contrasenia.msg %></p>
+                        <% } %>
+                </div>
+
+                <div class="div-contrasenia">
+                    <input class="text-field" type="password" name="confirmarContrasenia" placeholder="Confirmar Contraseña">
+                </div>
+
+                <div class="div-botones">
+                    <button class="botonForm botonSubmit" type="submit">Enviar</button>
+                    <button class="botonForm botonReset" type="reset">Cancelar</button>
+                </div>
+
+            </form>
+        </main>
+    </div>
+    <%-include('partials/footer')%> 
+       
+    </body>
+</html>

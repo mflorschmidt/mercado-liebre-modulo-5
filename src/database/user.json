@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Maria Schmidt",
+    "username": "mflor33",
+    "fechaDeNacimiento": "1991-03-20",
+    "email": "mariaf.schmidt33@gmail.com",
+    "domicilio": "calle falsa 123",
+    "tipoDePerfil": "Vendedor",
+    "intereses": "vidaSana",
+    "image": "default-image.png",
+    "contrasenia": "",
+    "confirmarContrasenia": "",
+    "loggeado": false
+  },
+  {
+    "id": 2,
+    "name": "Wesley De Vry",
+    "username": "wesleydevry",
+    "fechaDeNacimiento": "1986-09-19",
+    "email": "wesley@gmail.com",
+    "domicilio": "sudafrica 123",
+    "tipoDePerfil": "Comprador",
+    "intereses": "vidaSana",
+    "image": "176463693_3915428011826377_6152253147685201785_n.jpg",
+    "contrasenia": "",
+    "confirmarContrasenia": "",
+    "loggeado": true
+  },
+  {
+    "id": 3,
+    "name": "Matias S",
+    "username": "matisc",
+    "fechaDeNacimiento": "1994-04-12",
+    "email": "mati@mail.com",
+    "domicilio": "calle 342",
+    "tipoDePerfil": "Vendedor",
+    "image": "atma 2 oats.png",
+    "password": "matias123",
+    "loggeado": true,
+    "borrado": true
+  },
+  {
+    "id": 4,
+    "name": "Corina S",
+    "username": "cori888",
+    "fechaDeNacimiento": "1986-09-20",
+    "email": "cori88@mail.com",
+    "domicilio": "calle 45",
+    "tipoDePerfil": "Comprador",
+    "image": "247831464_422501789435019_3649967434227723087_n.jpg",
+    "password": "cori123",
+    "loggeado": true,
+    "intereses": "juguetería",
+    "contrasenia": "",
+    "confirmarContrasenia": ""
+  }
+]

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include('partials/head')%>
+    <body>
+        <%-include('partials/header')%>
+    <div class="main-fijo">
+        <section>
+            <img class="banner" src="/img/img-home-banner.jpg" alt="logo-mercado-liebre">
+        </section>
+        <main >
+
+            <div >
+            
+            <h1>Bienvenido <%=usuario.name%></h1>
+            
+            </div>
+
+            <div>
+            <img src="/img/<%=usuario.image%>" alt="<%= usuario.name %>">
+            </div>
+
+            <div class="div-botones">
+
+            <button ><a href="/user/editar/<%=usuario.id%>">Editar</a></button>
+            </div>
+
+    
+            <form action="/user/eliminar/<%=usuario.id%>?_method=DELETE" method="post">
+                
+                <div class="div-botones" >
+                    <button type="submit">Eliminar</button>
+                </div>
+
+            </form>
+        </main>
+    </div>
+    <%-include('partials/footer')%> 
+    </body>
+</html>

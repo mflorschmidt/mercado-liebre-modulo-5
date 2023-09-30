@@ -1,0 +1,15 @@
+   EN LA VISTA DE EDITAR:
+   
+   <h3>Intereses</h3>
+                <div class="selecciones"> 
+                    <label class="label-register" for="electro">Electro</label>
+                    <input <%=usuario.intereses.includes("electro") == true ? "checked": " " %>type="checkbox" name="intereses" value="electro" id="electro" >
+                    <label class="label-register" for="moda">Moda</label>
+                    <input <%=usuario.intereses.includes("moda") == true ? "checked": " " %> type="checkbox" name="intereses" value="moda" id="moda">
+                    <label class="label-register" for="hogar">Hogar</label>
+                    <input <%=usuario.intereses.includes("hogar") == true ? "checked": " " %> type="checkbox" name="intereses" value="hogar" id="hogar">
+                    <label class="label-register" for="juguetería">Juguetería</label>
+                    <input <%=usuario.intereses.includes("juguetería") == true ? "checked": " " %> type="checkbox" name="intereses" value="juguetería" id="juguetería">
+                    <label class="label-register" for="vidaSana">Vida Sana</label>
+                    <input <%=usuario.intereses.includes("vidaSana") == true ? "checked": " " %> type="checkbox" name="intereses" value="vidaSana" id="vidaSana"> 
+                </div>

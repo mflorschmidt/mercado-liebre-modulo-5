@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include('partials/head')%>
+    <body>
+        <%-include('partials/header')%>
+    <div class="main-fijo">
+        <section>
+            <img class="banner" src="/img/img-home-banner.jpg" alt="logo-mercado-liebre">
+        </section>
+        <main >
+            <form class="formulario-login" action="/" method="get">
+                <div class="usuario-contraseña">
+                    <div class="contenedor-usuario-login">    
+                        <input class="usuario-login" type="text" name="username" placeholder="Nombre de Usuario">
+                    </div>
+
+                    <div class="contenedor-contrasenia-login">
+                        <input class="contrasenia-login" type="password" name="contrasenia" placeholder="Contraseña">
+                    </div>
+                </div>
+                <div>
+                    <button class="boton-login-enviar" type="submit">Enviar</button>
+                </div>
+
+            </form>
+        </main>
+    </div>
+    <%-include('partials/footer')%> 
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include('partials/head')%>
+    <body>
+        <%-include('partials/header')%>
+
+        <div class="main-fijo">
+            <section>
+                <img class="banner" src="/img/img-home-banner.jpg" alt="logo-mercado-liebre">
+            </section>
+            <main>
+                <section>
+                    <h3>Basado en tu última visita</h3>
+                <div class="Primer-Título-Visita">
+                    <% visitado.forEach((row) => { %>
+                    
+                    <article>
+                        <img src="/img/<%= row.image %>" alt="<%= row.name %>">
+                        <div class="info-article">
+                        <i class="fas fa-truck"></i>
+                                <p class="precio">$ <%= row.price %></p>
+                                <p class="descuento"><%= row.discount %>% OFF</p>
+                                <h4 class="descripción"><%= row.name %></h4> 
+                        </div>
+                    </article>
+
+                    <% }); %>
+                </div>
+                </section>
+                <section>
+                    <h3>Ofertas</h3>
+                <div class="Ofertas">
+                    <% oferta.forEach((row) => { %>
+                    
+                        <article>
+                            <img src="/img/<%= row.image %>" alt="<%= row.name %>">
+                            <div class="info-article">
+                            <i class="fas fa-truck"></i>
+                                    <p class="precio">$ <%= row.price %></p>
+                                    <p class="descuento"><%= row.discount %>% OFF</p>
+                                    <h4 class="descripción"><%= row.name %></h4> 
+                            </div>
+                        </article>
+    
+                        <% }); %>
+                    </div>
+                </div>
+                </section>
+            </main>
+        </div>  
+        <%-include('partials/footer')%>  
+        
+    </body>
+</html>
